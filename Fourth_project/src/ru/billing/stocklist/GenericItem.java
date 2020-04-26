@@ -24,13 +24,15 @@ public class GenericItem implements Cloneable{
         //this.price = price;
         //this.category = category;
     }
-    //GenericItem(String name, float price, GenericItem analog){
-        //this(name, price, Category.GENERAL);
-        //в этом конструкторе не присваем ID, так как это перегруженный конструктор, который берет за основу поля из
-        //родительского конструктора, в котором по умолчанию ID увеличивается на 1
-        //ID = GenericItem.currentID++;
-        //this.analog = analog;
-    //}
+    /*
+        GenericItem(String name, float price, GenericItem analog){
+        this(name, price, Category.GENERAL);
+        в этом конструкторе не присваем ID, так как это перегруженный конструктор, который берет за основу поля из
+        родительского конструктора, в котором по умолчанию ID увеличивается на 1
+        ID = GenericItem.currentID++;
+        this.analog = analog;
+        }
+        */
 
     public GenericItem(){
         this("Unnamed", 0f, Category.GENERAL);
